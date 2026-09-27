@@ -664,6 +664,34 @@ a{color:inherit;text-decoration:none;}
   .footer{padding:20px 22px;}
 }
 
+
+/* ─── VIEWPORT COMPOSITION FIX ─── */
+@media(min-width:901px) and (min-height:700px){
+  #clinicas{
+    min-height:100svh;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    padding:64px 0;
+  }
+  #clinicas .wrap{width:100%;}
+  #clinicas .clinicas-grid{margin-top:30px;}
+  #clinicas .clinicas-intro p{margin-bottom:11px;}
+
+  #sistema{
+    min-height:100svh;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    padding:58px 0;
+  }
+  #sistema .wrap{width:100%;}
+  #sistema .sistema-intro{margin-bottom:30px;}
+  #sistema .dim{padding:24px 28px;min-height:132px;}
+  #sistema .sistema-closing{margin-top:26px;padding-top:22px;}
+  #sistema .sistema-closing p{line-height:1.48;}
+}
+
 </style>
 </head>
 <body>
