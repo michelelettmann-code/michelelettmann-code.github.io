@@ -568,6 +568,102 @@ a{color:inherit;text-decoration:none;}
   .hero-body{padding-left:clamp(72px,7vw,118px);}
 }
 
+
+/* ─── FINAL DELIVERY SYSTEM ─── */
+:root{--content:1160px;}
+.s{padding:88px 0;}
+.wrap{max-width:var(--content);padding:0 48px;}
+.s-h2{font-size:clamp(34px,3.05vw,46px);line-height:1.12;max-width:780px;margin-bottom:18px;}
+.s-lead{font-size:15px;line-height:1.75;}
+
+/* Problem / diagnosis */
+#clinicas{padding:86px 0 82px;}
+#clinicas .s-h2{max-width:720px;}
+#clinicas .clinicas-grid{
+  grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);
+  gap:88px;
+  margin-top:38px;
+  align-items:start;
+}
+#clinicas .clinicas-intro{font-size:14.5px;line-height:1.72;max-width:590px;}
+#clinicas .clinicas-intro p{margin-bottom:13px;}
+#clinicas .clinicas-closing{margin-top:0;padding:24px 0 0;}
+#clinicas .clinicas-closing p{font-size:clamp(18px,1.55vw,22px);line-height:1.55;max-width:440px;}
+
+/* System */
+#sistema{padding:94px 0 90px;}
+#sistema .sistema-intro{max-width:700px;margin-bottom:44px;}
+#sistema .sistema-dims{grid-template-columns:repeat(3,1fr);}
+#sistema .dim{padding:30px 28px;min-height:150px;}
+#sistema .dim-name{font-size:19px;margin-bottom:10px;}
+#sistema .dim-desc{font-size:13px;line-height:1.68;}
+#sistema .sistema-closing{margin-top:38px;padding-top:28px;max-width:720px;}
+
+/* Method */
+#como-trabalho{padding:92px 0 96px;}
+#como-trabalho .s-h2{max-width:720px;}
+#como-trabalho .movimentos{margin-top:36px;}
+#como-trabalho .mov{padding:34px 34px 38px;min-height:220px;}
+#como-trabalho .mov-num{font-size:64px;}
+#como-trabalho .mov-desc{font-size:13.5px;line-height:1.72;max-width:450px;}
+
+/* Michele */
+#michele .michele-layout{grid-template-columns:minmax(390px,43%) minmax(0,57%);min-height:660px;}
+#michele .michele-photo img{object-position:center 10%;}
+#michele .michele-body{padding:64px clamp(48px,6vw,92px);}
+#michele .michele-name{font-size:clamp(34px,3vw,44px);}
+#michele .michele-bio{font-size:14px;line-height:1.72;margin-bottom:13px;max-width:610px;}
+#michele .michele-creds{margin-top:22px;}
+#michele .michele-cred{padding:9px 0;}
+
+/* Conversion */
+#contato{padding:94px 0 82px;}
+#contato .cta-final-h{font-size:clamp(30px,2.7vw,40px);line-height:1.18;}
+#contato .cta-final-sub{font-size:14.5px;line-height:1.72;max-width:520px;margin-bottom:34px;}
+#contato .cta-contacts{margin-top:30px;}
+.footer{padding:22px max(32px,calc((100vw - var(--content))/2 + 48px));}
+
+/* Tablet */
+@media(max-width:900px){
+  .s{padding:76px 0;}
+  .wrap{padding:0 36px;}
+  #clinicas .clinicas-grid{grid-template-columns:1fr;gap:34px;margin-top:34px;}
+  #clinicas .clinicas-intro{max-width:680px;}
+  #clinicas .clinicas-closing{max-width:620px;}
+  #sistema .sistema-dims{grid-template-columns:1fr 1fr;}
+  #sistema .dim{min-height:0;}
+  #michele .michele-layout{grid-template-columns:1fr;}
+  #michele .michele-photo{height:620px;min-height:0;}
+  #michele .michele-body{padding:60px 48px 68px;}
+}
+
+/* Mobile */
+@media(max-width:640px){
+  .s{padding:64px 0;}
+  .wrap{padding:0 22px;}
+  .s-h2{font-size:34px;line-height:1.1;}
+  #clinicas{padding:64px 0 62px;}
+  #clinicas .clinicas-grid{margin-top:30px;gap:30px;}
+  #clinicas .clinicas-intro{font-size:14px;line-height:1.68;}
+  #clinicas .clinicas-closing{padding-top:20px;}
+  #sistema{padding:70px 0 66px;}
+  #sistema .sistema-intro{margin-bottom:34px;}
+  #sistema .sistema-dims{grid-template-columns:1fr;}
+  #sistema .dim{padding:26px 4px;border-right:0!important;}
+  #sistema .dim:nth-last-child(-n+2){border-bottom:1px solid rgba(255,255,255,.1);}
+  #sistema .dim:last-child{border-bottom:none;}
+  #como-trabalho{padding:68px 0 72px;}
+  #como-trabalho .movimentos{margin-top:28px;}
+  #como-trabalho .mov{padding:30px 4px;min-height:0;border-right:0;}
+  #como-trabalho .mov-num{font-size:56px;}
+  #michele .michele-photo{height:500px;}
+  #michele .michele-body{padding:48px 22px 56px;}
+  #michele .michele-bio{font-size:14px;line-height:1.7;}
+  #contato{padding:72px 0 64px;}
+  #contato .cta-final-h br{display:none;}
+  .footer{padding:20px 22px;}
+}
+
 </style>
 </head>
 <body>
